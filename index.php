@@ -1,30 +1,76 @@
-<html>
-<head><title>array input</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-</head>
-<body>
+<?php include "header.php";?>
   <div class="container">
-<!-- this is indexing -->
-<?php
-    $student = array(1, 2, 3, "pokharel");
-    echo $student[3];
- ?>
-
- <!-- this is associating -->
  <?php
      $student = array(
-         'name' => "anusuman pokharel",
-         'phone number' => "9861534925",
+       array(
+         'name' => "anusuman ",
+         'phone number' => "9861",
          'address' => "jadibuti"
-    );
-    print_r ($student);
-    // $array = array(1, 2, 3, "ansuman pokharel");
-    // 	print_r($array);
+       ),
 
+       array(
+           'name' => "anusuman p",
+           'phone number' => "98615",
+           'address' => "jadibuti"
+                      ),
+
+        array(
+            'name' => "anusuman pok",
+            'phone number' => "986153",
+            'address' => "jadibuti"
+         ),
+
+         array(
+             'name' => "anusuman pokh",
+             'phone number' => "9861534",
+             'address' => "jadibuti"
+        ),
+
+        array(
+          'name' => "anusuman pokha",
+          'phone number' => "98615349",
+          'address' => "jadibuti"
+        ),
+        array(
+          'name' => "anusuman pokhar",
+          'phone number' => "986153492",
+          'address' => "jadibuti"
+        ),
+
+        array(
+          'name' => "anusuman pokharel",
+          'phone number' => "9861534925",
+          'address' => "jadibuti"
+        )
+    );
+
+?>
+
+<table class="table table-bordered">
+  <thead>
+    <th>S.no.</th>
+  <th>Name</th>
+  <th>Phone number </th>
+  <th>Address </th>
+  </thead>
+  <tbody>
+    <?php
+
+    for($i=0, $y=0; $i<count($student); $i++, $y++){
+
+      echo "<tr>";
+      echo "<td>".$y."</td>";
+      echo "<td>".$student[$i]['name']."</td>";
+      echo "<td>".$student[$i]['phone number']."</td>";
+      echo "<td>".$student[$i]['address']."</td>";
+      echo "</tr>";
+
+      }
   ?>
+  </tbody>
+</table>
+
+
 
 </div>
-</body>
-</html>
+<?php include "footer.php";?>
