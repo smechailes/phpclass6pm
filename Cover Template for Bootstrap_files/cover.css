@@ -1,11 +1,6 @@
 /*
-
-* Based on Cover by https://twitter.com/mdo"  @mdo
-* added cover image and background color to match (green)
-*
-* Globals
-
-*/
+ * Globals
+ */
 
 /* Links */
 a,
@@ -19,7 +14,7 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
+  text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: 1px solid #fff;
 }
@@ -31,19 +26,13 @@ a:hover {
 
 html,
 body {
-/*css for full size background image*/
-  background: url("images\1.jpeg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
   height: 100%;
-  background-color: #060;
+  background-color: #333;
+}
+body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -90,7 +79,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.95);
+  color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
